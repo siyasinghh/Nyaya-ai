@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nyaya Drishti - Legal Summarizer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="summarize.css">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background: url('background.jpg') no-repeat center center fixed;
+      background-size: cover;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: rgba(0,0,0,0.7);
+      color: #fff;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 5rem auto 2rem;
+      background-color: rgba(255,255,255,0.95);
+      padding: 2rem;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    }
+
+    textarea {
+      width: 100%;
+      min-height: 200px;
+      padding: 1rem;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+      resize: vertical;
+      font-size: 1rem;
+    }
+
+    button {
+      background-color: #ffcb6b;
+      border: none;
+      padding: 0.8rem 1.5rem;
+      border-radius: 50px;
+      font-weight: 600;
+      cursor: pointer;
+      margin-top: 1rem;
+      transition: transform 0.2s;
+    }
+
+    button:hover {
+      transform: scale(1.05);
+    }
+
+    #summary {
+      margin-top: 1.5rem;
+      white-space: pre-wrap;
+      padding: 1rem;
+      border-radius: 10px;
+      background-color: #f5f5f5;
+      border: 1px solid #ddd;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo">Nyaya Drishti</div>
+    <a href="index.html" style="color:#fff; text-decoration:none;">← Back to Home</a>
+  </nav>
+
+  <div class="container">
+    <h2>AI-Powered Legal Summarizer</h2>
+    <p>Paste legal text or case judgments here and get a concise summary in seconds.</p>
+
+    <textarea id="legalText" placeholder="Paste legal text here..."></textarea>
+    <br>
+    <button id="summarizeBtn">Summarize</button>
+
+    <div id="summary"></div>
+  </div>
+
+  <script src="summarize.js" defer></script>
+</body>
+</html>

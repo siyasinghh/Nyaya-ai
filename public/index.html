@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nyaya Drishti - AI Legal Research Assistant</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="favicon.png">
+</head>
+<body>
+
+  <nav>
+    <div class="logo">⚖️ Nyaya Drishti</div>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#features">Tools</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>>
+  </nav>
+
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>⚖️ Nyaya Drishti</h1>
+      <p>Nyaya Drishti is an AI-powered legal research assistant that understands natural language queries, summarizes judgments, and links related laws in seconds.</p>
+      <button id="getStarted"><a href="#features">Get Started</a></li></button>
+    </div>
+  </section>
+
+  <section id="features" class="features">
+  <h2>Dashboard Tools</h2>
+  <div class="feature-grid">
+
+    <div class="feature-card">
+      <h3>🔍 Smart Legal Search</h3>
+      <p>Ask questions in plain language and get instant access to relevant case laws, acts, and legal precedents.</p>
+      <button onclick="window.location.href='legal-search.html'">Use Tool</button>
+    </div>
+
+    <div class="feature-card">
+      <h3>⚖️ Judgment Summarization</h3>
+      <p>Automatically summarizes lengthy judgments into concise, readable points — saving hours of research time.</p>
+      <button onclick="window.location.href='summarizer.html'">Use Tool</button>
+    </div>
+
+    <div class="feature-card">
+      <h3>📚 Linked Laws</h3>
+      <p>Seamlessly connects case results with related statutes and constitutional provisions for deeper insights.</p>
+      <div class="upcoming">Upcoming Soon</div>
+    </div>
+
+    <div class="feature-card">
+      <h3>💡 AI-Powered Insights</h3>
+      <p>Uses advanced AI to highlight key legal principles, patterns, and precedents across multiple cases.</p>
+      <div class="upcoming">Upcoming Soon</div>
+    </div>
+
+    </div>
+  </section>
+    <!-- About Section -->
+  <section id="about" class="about">
+  <div class="about-overlay"></div>
+  <div class="about-container">
+    <h2>About Nyaya Drishti</h2>
+    <div class="about-content">
+      <p>
+        <strong>Nyaya Drishti</strong> is an AI-powered legal research assistant built to make
+        the complex world of Indian law more accessible. It helps advocates, students, and
+        researchers find relevant judgments, summarize lengthy case laws, and link legal
+        provisions — all in a matter of seconds.
+      </p>
+      <p>
+        Born from the vision of using AI for justice accessibility, Nyaya Drishti merges
+        technology with jurisprudence — transforming how we interpret and interact with the
+        law. Our goal is to empower the next generation of legal minds with intelligent, efficient,
+        and ethical research tools.
+      </p>
+    </div>
+  </div>
+</section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="contact-container">
+      <h2>Contact Us</h2>
+      <p>Have feedback, ideas, or collaboration requests? We’d love to hear from you.</p>
+
+      <form id="contactForm">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Your Email" required>
+        <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+   <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-left">
+        <h3>Nyaya Drishti ⚖️</h3>
+        <p>Empowering legal minds with the precision of AI.</p>
+      </div>
+
+      <div class="footer-center">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#features">Tools</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-right">
+        <h4>Connect</h4>
+        <div class="socials">
+          <a href="https://github.com/kartik1525" target="_blank">GitHub</a>
+          <a href="https://www.linkedin.com/in/kartikeya-singh" target="_blank">LinkedIn</a>
+          <a href="mailto:kartikeya@example.com">Email</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 Nyaya Drishti. Built with ❤️ by Code Alchemist</p>
+    </div>
+  </footer>
+<!-- Help Bot -->
+<div id="helpBotToggle" class="help-bot-toggle">💬 Help</div>
+<div id="helpBot" class="help-bot">
+  <div class="help-bot-header">
+    <span>Nyaya Drishti Help</span>
+    <span id="closeHelpBot" class="close-btn">&times;</span>
+  </div>
+  <div class="help-bot-content">
+    <h3>⚖️ Welcome to Nyaya Drishti!⚖️</h3>
+    <p><strong>📍 Navigation:</strong> Use the logo to return home, Tools for legal research, and About/Contact for info or feedback.</p>
+    <p><strong>🔍 Smart Legal Search:</strong> Enter queries to find relevant case laws, statutes, and precedents.</p>
+    <p><strong>👨🏻‍💻 Judgment Summarizer:</strong> Paste or select a judgment to get a concise summary.</p>
+    <p><strong>⏳ Upcoming Tools:</strong> Linked Laws and AI-Powered Insights coming soon.</p>
+    <p><strong>💡 Tips:</strong> Keep queries clear and concise, check About for more info, and use Contact for feedback.</p>
+  </div>
+</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
